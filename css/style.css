@@ -1,0 +1,131 @@
+/*Base classes*/
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	background-color: aqua;
+}
+.clear {
+	clear: both;
+}
+body {
+	/*height: 1800px;*/
+	padding-top: 103px;
+}
+
+/*Header*/
+.header-wraper {
+	background-color: red;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	z-index: 15;
+}
+.navigation {
+	float: right;
+}
+.nav-li {
+	float: left;
+}
+.nav-ul::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	height: 100px;
+}
+
+/*Float*/
+.left-block {
+	width: 570px;
+	height: 320px;
+	background-color: yellow;
+	float: left;
+}
+.right-block {
+	width: 570px;
+	height: 320px;
+	background-color: blue;
+	float: left;
+}
+.container::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.image-wraper {
+	float: left;
+}
+
+/*Position absolute & Relative*/
+.box-wraper {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	position: relative;
+	z-index: 8;
+}
+.box1 {
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 2;
+}
+.box2 {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 3;
+}
+.text-image {
+	position: absolute;
+	top:0 ;
+	right: 0;
+	color: red;
+}
+.image-wraper1 {
+	position: relative;
+	width: 1000px;
+}
+.icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+}
+
+/*Position sticky*/
+.sticky {
+	position: sticky;
+	left: 0;
+	top: 104px;
+	border: 2px solid red;
+	z-index: 15;
+}
+
+/*Background-image*/
+.bg-image {
+	background-image: url('../img/photographer.jpg');
+	height: 600px;
+	width: 900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom right;
+	position: relative;
+}
+.bg-text {
+	position: absolute;
+	top: 0;
+	left: 100px;
+	color: #fff;
+}
